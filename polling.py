@@ -5,8 +5,9 @@ class Poll(object):
 
         TODO: limit the number of poll options
         '''
-        self.poll_options = list(poll_options)
-        self.poll_options_dict = {k:0 for k in self.poll_options}
+        if poll_options:
+            self.poll_options = list(poll_options)
+            self.poll_options_dict = {k:0 for k in self.poll_options}
 
     def vote(self, selection):
         '''
