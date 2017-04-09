@@ -37,6 +37,6 @@ class Poll(object):
 
 if __name__ == '__main__':
     poll = Poll(['bap','boop','42','blah-blah-blah'])
-    poll.vote('42')
-    poll.vote('32')
+    poll.vote('4')
+    poll.vote('3')
     print poll.poll_options_dict
